@@ -402,7 +402,7 @@ def webui(ctx, host, port, cdn, scheduler_rpc, fetcher_rpc, max_rate, max_burst,
     if g.get('testing_mode') or get_object:
         return app
 
-    app.run(host=host, port=port)
+    app.run(host=host, port=os.environ['PORT'])
 
 
 @cli.command()
