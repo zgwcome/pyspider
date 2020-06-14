@@ -326,7 +326,7 @@ def result_worker(ctx, result_cls, get_object=False):
 @cli.command()
 @click.option('--host', default='0.0.0.0', envvar='WEBUI_HOST',
               help='webui bind to host')
-@click.option('--port', default=5000, envvar='WEBUI_PORT',
+@click.option('--port', default=80, envvar='WEBUI_PORT',
               help='webui bind to host')
 @click.option('--cdn', default='//cdnjs.cloudflare.com/ajax/libs/',
               help='js/css cdn server')
